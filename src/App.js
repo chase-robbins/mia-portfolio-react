@@ -8,22 +8,22 @@ import MobileNav from './components/MobileNav.js';
 import MobileMenuButton from './components/MobileMenuButton.js';
 
 function App() {
-  const [primaryNavVal, setPrimaryNavVal] = useState('Photography');
-  const [secondaryNavVal, setSecondaryNavVal] = useState('Emmie');
+  const [primaryNavVal, setPrimaryNavVal] = useState('MISC');
+  const [secondaryNavVal, setSecondaryNavVal] = useState('MISC');
   const [mobileScreen, setMobileScreen] = useState();
   const [showMobileNav, setShowMobileNav] = useState();
 
-  if(showMobileNav){
+  if (showMobileNav) {
     return (
-      <MobileNav showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen} primaryNavVal={primaryNavVal} setPrimaryNavVal={setPrimaryNavVal} secondaryNavVal={secondaryNavVal} setSecondaryNavVal={setSecondaryNavVal}/>
+      <MobileNav showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen} primaryNavVal={primaryNavVal} setPrimaryNavVal={setPrimaryNavVal} secondaryNavVal={secondaryNavVal} setSecondaryNavVal={setSecondaryNavVal} />
     );
   }
-  if(!mobileScreen){
+  if (!mobileScreen) {
     return (
       <div className="App body">
-        <NavManager secondaryNavVal={secondaryNavVal} setSecondaryNavVal={setSecondaryNavVal} primaryNavVal={primaryNavVal} setPrimaryNavVal={setPrimaryNavVal}/>
+        <NavManager secondaryNavVal={secondaryNavVal} setSecondaryNavVal={setSecondaryNavVal} primaryNavVal={primaryNavVal} setPrimaryNavVal={setPrimaryNavVal} />
         <div className="content-holder">
-          <Gallery secondaryNavVal={secondaryNavVal} primaryNavVal={primaryNavVal}/>
+          <Gallery secondaryNavVal={secondaryNavVal} primaryNavVal={primaryNavVal} />
         </div>
         <div className="bio-holder">
           <div className="bio-block"><img src="/images/Mia-McCarthy.png" loading="eager" sizes="(max-width: 479px) 90vw, (max-width: 991px) 45vw, 35vw" srcSet="/images/Mia-McCarthy-p-500.png 500w, /images/Mia-McCarthy.png 679w" alt="" className="image" /></div>
@@ -37,17 +37,17 @@ function App() {
             </div>
           </div>
         </div>
-        <MobileMenuButton setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen}/>
+        <MobileMenuButton setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen} />
         <div className="floating-/images-holder"></div>
       </div>
     );
   } else {
-    if(secondaryNavVal !== ''){
-      return(
+    if (secondaryNavVal !== '') {
+      return (
         <>
-          <img onClick={()=>{setMobileScreen(false)}} src="/images/Mia-McCarthy.png" loading="eager" sizes="(max-width: 479px) 90vw, (max-width: 991px) 45vw, 35vw" srcSet="/images/Mia-McCarthy-p-500.png 500w, /images/Mia-McCarthy.png 679w" alt="" className="image logo" />
-          <Gallery secondaryNavVal={secondaryNavVal} primaryNavVal={primaryNavVal}/>
-          <MobileMenuButton setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen}/>
+          <img onClick={() => { setMobileScreen(false) }} src="/images/Mia-McCarthy.png" loading="eager" sizes="(max-width: 479px) 90vw, (max-width: 991px) 45vw, 35vw" srcSet="/images/Mia-McCarthy-p-500.png 500w, /images/Mia-McCarthy.png 679w" alt="" className="image logo" />
+          <Gallery secondaryNavVal={secondaryNavVal} primaryNavVal={primaryNavVal} />
+          <MobileMenuButton setShowMobileNav={setShowMobileNav} setMobileScreen={setMobileScreen} />
         </>
       );
     }

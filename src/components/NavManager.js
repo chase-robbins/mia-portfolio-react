@@ -2,54 +2,55 @@ import React from 'react';
 import ContentInfo from './ContentInfo.js';
 
 const primaryCategories = [
-  "Photography",
-  "3D Modeling",
-  "UI/UX Design",
-  "Painting"
+  "MISC",
+  "2021",
+  "2020",
+  "2019",
+  "2018",
 ];
-
-
 
 let primaryNav;
 let secondaryNav;
 
-const NavManager = ( { showMobileNav, setShowMobileNav, secondaryNavVal, setSecondaryNavVal, primaryNavVal, setPrimaryNavVal, mobile} ) => {
+const NavManager = ({ showMobileNav, setShowMobileNav, secondaryNavVal, setSecondaryNavVal, primaryNavVal, setPrimaryNavVal, mobile }) => {
 
-  function renderPrimaryNavItem(item){
-    if(item === primaryNavVal){
+  function renderPrimaryNavItem(item) {
+    if (item === "MISC") { return <></> }
+    if (item === primaryNavVal) {
       return (
         <div className='nav-item'><b>{item}</b></div>
       );
     } else {
       return (
-        <div className='nav-item' onClick={()=>{setPrimaryNavVal(item)}}>{item}</div>
+        <div className='nav-item' onClick={() => { setPrimaryNavVal(item) }}>{item}</div>
       );
     }
   }
-  function renderSecondaryNavItem(item){
-    if(!showMobileNav){
-      if(item === secondaryNavVal){
+  function renderSecondaryNavItem(item) {
+    if (item === "MISC") { return <></> }
+    if (!showMobileNav) {
+      if (item === secondaryNavVal) {
         return (
           <div className='nav-item'><b>{item}</b></div>
         );
       } else {
         return (
-          <div className='nav-item' onClick={()=>{setSecondaryNavVal(item)}}>{item}</div>
+          <div className='nav-item' onClick={() => { setSecondaryNavVal(item) }}>{item}</div>
         );
       }
     } else {
-      if(item === secondaryNavVal){
+      if (item === secondaryNavVal) {
         return (
-          <div onClick={()=>{setShowMobileNav(false);}} className='nav-item'><b>{item}</b></div>
+          <div onClick={() => { setShowMobileNav(false); }} className='nav-item'><b>{item}</b></div>
         );
       } else {
         return (
-          <div className='nav-item' onClick={()=>{setSecondaryNavVal(item);setShowMobileNav(false);}}>{item}</div>
+          <div className='nav-item' onClick={() => { setSecondaryNavVal(item); setShowMobileNav(false); }}>{item}</div>
         );
       }
     }
   }
-  function renderSecondaryNavItems(navVal){
+  function renderSecondaryNavItems(navVal) {
     let titles = [];
     let objs = ContentInfo(navVal);
     objs.forEach(obj => {
@@ -67,7 +68,7 @@ const NavManager = ( { showMobileNav, setShowMobileNav, secondaryNavVal, setSeco
 
   primaryNav = (
     <div className="primary-nav">
-      {primaryCategories.map(category => renderPrimaryNavItem(category))}
+      {primaryNavVal === "" ? <></> : primaryCategories.map(category => renderPrimaryNavItem(category))}
     </div>
   );
 
@@ -77,15 +78,15 @@ const NavManager = ( { showMobileNav, setShowMobileNav, secondaryNavVal, setSeco
     </>
   );
 
-  if(!mobile){
-    return(
+  if (!mobile) {
+    return (
       <div className="navbar-holder">
-      {primaryNav}
-      {secondaryNav}
+        {primaryNav}
+        {secondaryNav}
       </div>
     );
   } else {
-    return(
+    return (
       <div className="mobile-menu-linkholder">
         {primaryNav}
         {secondaryNav}
