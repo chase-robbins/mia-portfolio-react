@@ -27,7 +27,7 @@ function App() {
         </div>
         <div className="bio-holder">
           <div className="bio-block"><img src="/images/Mia-McCarthy.png" loading="eager" sizes="(max-width: 479px) 90vw, (max-width: 991px) 45vw, 35vw" srcSet="/images/Mia-McCarthy-p-500.png 500w, /images/Mia-McCarthy.png 679w" alt="" className="image" /></div>
-          <p className="contact-pg bdy">Howdy, I'm a cross-disciplinary designer currently studying at <a href="https://iovine-young.usc.edu/">USC's Iovine & Young Academy</a>. I'm also a photographer for <a href="https://www.imgmodels.com/new-york/home">IMG Models Worldwide</a>. In my free time, I'm also a 3d designer, painter, rug tufter, and product photographer. Enjoy!</p>
+          <p className="contact-pg bdy">I'm a cross-disciplinary designer currently studying at <a href="https://iovine-young.usc.edu/">USC's Iovine & Young Academy</a>. I'm also a photographer for <a href="https://www.imgmodels.com/new-york/home">IMG Models Worldwide</a>. In my free time, I'm also a 3D designer, painter, and product photographer. Enjoy!</p>
           <div className="contact-info">
             <p className="contact-pg">miamccarthy@gmail.com<br />tel. +1 760 331 7458<br /></p>
             <div className="social-icons">
