@@ -16,14 +16,18 @@ let ObjectsFor2018 = [];
 
 ObjectsForMISC.push(
   new SubCategory('MISC', 'MISC', [
-    'MISC1.jpg',
-    'MISC2.jpg',
-    'MISC3.jpg',
-    'MISC4.jpg',
-    'MISC5.jpg',
-    'MISC6.jpg',
-    'MISC7.jpg',
-    'MISC8.jpg',
+    'landing1.jpg',
+    'landing2.jpg',
+    'landing3.jpg',
+    'landing4.jpg',
+    'landing5.jpg',
+    'landing6.jpg',
+    'landing7.jpg',
+    'landing8.jpg',
+    'landing9.jpg',
+    'landing10.jpg',
+    'landing11.jpg',
+    'landing12.jpg',
   ])
 );
 
@@ -31,19 +35,48 @@ ObjectsForMISC.push(
 
 ObjectsFor2021.push(
   new SubCategory('2021', 'Ellie', [
-    'imgUrl.png',
+    'ellie1.jpg',
+    'ellie2.jpg',
+    'ellie3.jpg',
   ])
 );
 
 ObjectsFor2021.push(
   new SubCategory('2021', 'Will', [
-    'imgUrl.png',
+    'willsim1.jpg',
+    'willsim2.jpg',
+    'willsim3.jpg',
+    'willsim4.jpg',
+    'willsim5.jpg',
+    'willsim6.jpg',
   ])
 );
 
 ObjectsFor2021.push(
   new SubCategory('2021', 'Summer', [
-    'imgUrl.png',
+    'summermckeen1.jpg',
+    'summermckeen2.jpg',
+    'summermckeen3.jpg',
+    'summermckeen4.jpg',
+  ])
+);
+
+ObjectsFor2021.push(
+  new SubCategory('2021', 'Summer 2', [
+    'summerm1.jpg',
+    'summerm2.JPG',
+    'summerm3.jpg',
+    'summerm4.jpg',
+    'summerm5.jpg',
+  ])
+);
+ObjectsFor2021.push(
+  new SubCategory('2021', 'Jordan Beckham', [
+    'jordanb1.jpg',
+    'jordanb2.jpg',
+    'jordanb3.jpg',
+    'jordanb4.jpg',
+    'jordanb5.jpg',
   ])
 );
 
@@ -71,8 +104,11 @@ ObjectsFor2020.push(
   ])
 );
 ObjectsFor2020.push(
-  new SubCategory('2020', 'Sofia Rose', [
-    'imgUrl.png',
+  new SubCategory('2020', 'Sofie Rose', [
+    'sofierose1.jpg',
+    'sofierose2.jpg',
+    'sofierose3.jpg',
+    'sofierose4.jpg',
   ])
 );
 ObjectsFor2020.push(
@@ -108,15 +144,23 @@ ObjectsFor2020.push(
 //2019 Photos ------------------------------------------------------
 
 ObjectsFor2019.push(
-  new SubCategory('2019', 'Curtis', [
-    'imgUrl.png',
+  new SubCategory('2019', 'Curtiss', [
+    'curtiss1.jpg',
+    'curtiss2.jpg',
+    'curtiss3.jpg',
+    'curtiss4.jpg',
+    'curtiss5.png',
   ])
 );
 
 
 ObjectsFor2019.push(
   new SubCategory('2019', 'Emmie + Sydney', [
-    'imgUrl.png',
+    'em+syd1.jpg',
+    'em+syd2.jpg',
+    'em+syd3.jpg',
+    'em+syd4.jpg',
+    'em+syd5.jpg',
   ])
 );
 
@@ -136,6 +180,7 @@ ObjectsFor2019.push(
     'JORDAN1.jpg',
     'JORDAN2.jpg',
     'JORDAN3.jpg',
+    'JORDAN4.jpg',
   ])
 );
 
@@ -152,12 +197,6 @@ ObjectsFor2019.push(
 //2018 Photos ------------------------------------------------------
 
 ObjectsFor2018.push(
-  new SubCategory('2018', 'Otish', [
-    'imgUrl.png',
-  ])
-);
-
-ObjectsFor2018.push(
   new SubCategory('2018', 'Red Ghost', [
     'REDGHOST1.jpg',
     'REDGHOST2.jpg',
@@ -167,14 +206,41 @@ ObjectsFor2018.push(
 );
 
 ObjectsFor2018.push(
-  new SubCategory('2018', 'Self Portraits', [
-    'imgUrl.png',
+  new SubCategory('2018', 'Skate Park', [
+    'skate1.jpg',
+    'skate2.jpg',
+    'skate3.jpg',
+    'skate4.jpg',
+  ])
+);
+
+ObjectsFor2018.push(
+  new SubCategory('2018', 'Otish', [
+    'otish1.jpg',
+    'otish2.jpg',
+    'otish3.jpg',
+    'otish4.jpg',
+    'otish5.jpg',
   ])
 );
 
 ObjectsFor2018.push(
   new SubCategory('2018', 'Sola', [
-    'imgUrl.png',
+    'sola1.jpg',
+    'sola2.jpg',
+    'sola3.jpg',
+  ])
+);
+
+ObjectsFor2018.push(
+  new SubCategory('2018', 'MISC', [
+    'misc2_1.jpg',
+    'misc2_2.jpg',
+    'misc2_3.jpg',
+    'misc2_4.jpg',
+    'misc2_5.jpg',
+    'misc2_6.jpg',
+    'misc2_7.jpg',
   ])
 );
 
