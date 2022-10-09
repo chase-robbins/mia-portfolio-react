@@ -65,9 +65,7 @@ function App() {
           </p>
           <div className="contact-info">
             <p className="contact-pg">
-              miamccarthy@gmail.com
-              <br />
-              tel. +1 760 331 7458
+              miarmccarthy@gmail.com
               <br />
             </p>
             <div className="social-icons">
